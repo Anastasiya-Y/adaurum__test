@@ -1,0 +1,22 @@
+header.main-header
+  .container
+    .main-header__wrapper
+      a.main-header__logo(href="index.html" aria-label=`Переход на главную страницу сайта ${title}`)
+        +sprite(219, 29.41, 'logo')
+      nav.main-header__nav
+        ul.main__header__nav-list
+          li.main-header__nav-item
+            .main-header__nav-part
+              .main-header__nav-wrapper
+                +sprite(24, 24, 'icon-convert')
+              span 5%
+              span выручки
+            .main-header__nav-part
+              .main-header__nav-wrapper
+                +sprite(24, 24, 'icon-user')
+              span Username@adaurum.ru
+          li.main-header__nav-func
+            +img-btn("main-header__nav-btn", "settings", 24, 24, "icon-settings", "Открыть настройки.")
+            +img-btn("main-header__nav-btn", "settings", 24, 24, "icon-login", "Выйти из учетной записи.")
+
+

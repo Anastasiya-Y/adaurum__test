@@ -1,0 +1,23 @@
+- const languages = ["RU", "EN", "TUR"]
+
+footer.main-footer
+  .container
+    .main-footer__wrapper
+      a.main-footer__logo(href="index.html" aria-label=`Переход на главную страницу сайта ${title}`)
+        +sprite(219, 29.41, 'logo')
+      span.main-footer__copyright Политика конфиденциальности
+      a.main-footer__email(href="mailto:pinkchicken@adaurum.ru" aria-label=`Написать email на электронную почту компании ${title}`)
+        +sprite(24, 24, "icon-email")
+        span pinkchicken@adaurum.ru
+      .main-footer__languages
+        +sprite(24, 24, "icon-language")
+        ul.main-footer__languages-list
+          each item in languages
+            li= item
+      ul.main-footer__social
+        li.social__item
+          a.social__link.social__link--whatsapp(href="#" aria-label=`Страница компании ${title} в Telegram.` target="_blank")
+            +sprite(26, 25, "icon-telegram")
+        li.social__item
+          a.social__link.social__link--whatsapp(href="#" aria-label=`Страница компании ${title} в WhatsApp.` target="_blank")
+            +sprite(26, 26, "icon-whatsapp")

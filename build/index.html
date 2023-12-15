@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PinkChicken description">
+    <title>PinkChicken</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <div class="container">
+          <div class="main-header__wrapper"><a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу сайта PinkChicken">
+              <svg width="219" height="29.41">
+                <use href="img/sprite.svg#logo"></use>
+              </svg></a>
+            <nav class="main-header__nav">
+              <ul class="main__header__nav-list">
+                <li class="main-header__nav-item">
+                  <div class="main-header__nav-part">
+                    <div class="main-header__nav-wrapper">
+                      <svg width="24" height="24">
+                        <use href="img/sprite.svg#icon-convert"></use>
+                      </svg>
+                    </div><span>5%</span><span>выручки</span>
+                  </div>
+                  <div class="main-header__nav-part">
+                    <div class="main-header__nav-wrapper">
+                      <svg width="24" height="24">
+                        <use href="img/sprite.svg#icon-user"></use>
+                      </svg>
+                    </div><span>Username@adaurum.ru</span>
+                  </div>
+                </li>
+                <li class="main-header__nav-func">
+                  <button class="img-btn main-header__nav-btn" id="settings">
+                    <svg width="24" height="24">
+                      <use href="img/sprite.svg#icon-settings"></use>
+                    </svg>
+                  </button>
+                  <button class="img-btn main-header__nav-btn" id="settings">
+                    <svg width="24" height="24">
+                      <use href="img/sprite.svg#icon-login"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <h1 class="visually-hidden">PinkChicken</h1>
+          <section class="files">
+            <h2>Файлы</h2>
+            <div class="files__content">
+              <div class="files__img-wrapper">
+                <svg width="255.84" height="314">
+                  <use href="img/sprite.svg#img-files"></use>
+                </svg>
+              </div>
+              <p>Закажи у личного помощника медиаплан. Он появится в этом разделе</p>
+            </div>
+          </section>
+          <section class="chat">
+            <div class="chat__text-wrapper">
+              <h2>Личный помощник</h2>
+              <div class="chat__contacts"><span class="chat__contacts-name">Jim Davidson</span><span class="chat__contacts-email">Jim Davidson@adaurum.ru</span></div>
+              <button class="chat__submenu">
+                <svg width="5" height="21">
+                  <use href="img/sprite.svg#icon-submenu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="chat__content">
+              <div class="chat__window">
+                <svg width="180" height="183">
+                  <use href="img/sprite.svg#img-chat"></use>
+                </svg>
+                <p>Это чат с администратором. Ты можешь с ним пообщаться по любому вопросу о нашем сервисе и узнать о ходе работы</p>
+              </div>
+              <div class="chat__interaction">
+                <button class="chat__btn chat__btn--mediaplan" id="btn-mediaplan">Заказать медиаплан.</button>
+                <button class="chat__btn chat__btn--report" id="btn-report">Заказать отчет.</button>
+                <form class="chat__form" action="#" method="post">
+                  <input class="chat__form-input" type="text" placeholder="Введите сообщение для администратора" required>
+                  <div class="chat__form-additional-btns">
+                    <label class="chat__file-input">
+                      <input type="file" name="file" ariaLabel="null"/><span class="chat__file-btn">
+                        <svg width="24" height="24">
+                          <use href="img/sprite.svg#icon-load-file"></use>
+                        </svg></span>
+                    </label>
+                    <label class="chat__file-input">
+                      <input type="file" name="file" ariaLabel="null"/><span class="chat__file-btn">
+                        <svg width="24" height="24">
+                          <use href="img/sprite.svg#icon-load-img"></use>
+                        </svg></span>
+                    </label>
+                  </div>
+                  <div class="chat__form-btn-wrapper">
+                    <button class="chat__form-btn" type="submit" aria-label="Отправить сообщение.">
+                      <svg width="24" height="24">
+                        <use href="img/sprite.svg#icon-send"></use>
+                      </svg>
+                    </button><span>Enter</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer__wrapper"><a class="main-footer__logo" href="index.html" aria-label="Переход на главную страницу сайта PinkChicken">
+              <svg width="219" height="29.41">
+                <use href="img/sprite.svg#logo"></use>
+              </svg></a><span class="main-footer__copyright">Политика конфиденциальности</span><a class="main-footer__email" href="mailto:pinkchicken@adaurum.ru" aria-label="Написать email на электронную почту компании PinkChicken">
+              <svg width="24" height="24">
+                <use href="img/sprite.svg#icon-email"></use>
+              </svg><span>pinkchicken@adaurum.ru</span></a>
+            <div class="main-footer__languages">
+              <svg width="24" height="24">
+                <use href="img/sprite.svg#icon-language"></use>
+              </svg>
+              <ul class="main-footer__languages-list">
+                <li>RU</li>
+                <li>EN</li>
+                <li>TUR</li>
+              </ul>
+            </div>
+            <ul class="main-footer__social">
+              <li class="social__item"><a class="social__link social__link--whatsapp" href="#" aria-label="Страница компании PinkChicken в Telegram." target="_blank">
+                  <svg width="26" height="25">
+                    <use href="img/sprite.svg#icon-telegram"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--whatsapp" href="#" aria-label="Страница компании PinkChicken в WhatsApp." target="_blank">
+                  <svg width="26" height="26">
+                    <use href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script src="js/main.min.js" type="module"></script>
+    </div>
+  </body>
+</html>

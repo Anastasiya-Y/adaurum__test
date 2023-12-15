@@ -1,0 +1,18 @@
+mixin hero(options = {}, items = [])
+    - const title = options.title;
+    - const text = options.text;
+
+    .hero
+        .container
+            if (title)
+                h1.hero__title!= title
+            if (text)
+                p.hero__desciption!= text
+            ul.hero__list
+                each item in items
+                    li.hero__item
+                        .hero__label-wrapper
+                            span.hero__number= item.number
+                            h2.hero__label= item.label
+                        .hero__info-wrapper
+                            p.hero__info= item.info
