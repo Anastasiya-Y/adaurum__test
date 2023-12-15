@@ -1,0 +1,20 @@
+.files {
+  padding: 28px 20px;
+  background-color: $color-default-white;
+  box-shadow: 0px 0px 30px 0px $color-shadow;
+  border-radius: 20px;
+
+  h2 {
+    @extend %title;
+
+    margin-bottom: 46px;
+  }
+}
+
+.files__content {
+  @extend %p;
+}
+
+.files__img-wrapper {
+  margin-bottom: 30px;
+}

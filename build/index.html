@@ -20,14 +20,14 @@
               <ul class="main__header__nav-list">
                 <li class="main-header__nav-item">
                   <div class="main-header__nav-part">
-                    <div class="main-header__nav-wrapper">
+                    <div class="main-header__img-wrapper">
                       <svg width="24" height="24">
                         <use href="img/sprite.svg#icon-convert"></use>
                       </svg>
-                    </div><span>5%</span><span>выручки</span>
+                    </div><span>5%</span><span class="main-header__additional-text">выручки</span>
                   </div>
                   <div class="main-header__nav-part">
-                    <div class="main-header__nav-wrapper">
+                    <div class="main-header__img-wrapper">
                       <svg width="24" height="24">
                         <use href="img/sprite.svg#icon-user"></use>
                       </svg>
@@ -51,67 +51,73 @@
           </div>
         </div>
       </header>
-      <main>
+      <main class="main">
         <div class="container">
           <h1 class="visually-hidden">PinkChicken</h1>
-          <section class="files">
-            <h2>Файлы</h2>
-            <div class="files__content">
-              <div class="files__img-wrapper">
-                <svg width="255.84" height="314">
-                  <use href="img/sprite.svg#img-files"></use>
-                </svg>
+          <div class="main__wrapper">
+            <section class="files">
+              <h2>Файлы</h2>
+              <div class="files__content">
+                <div class="files__img-wrapper">
+                  <svg width="255.84" height="314">
+                    <use href="img/sprite.svg#img-files"></use>
+                  </svg>
+                </div>
+                <p>Закажи у личного помощника медиаплан. Он появится в этом разделе</p>
               </div>
-              <p>Закажи у личного помощника медиаплан. Он появится в этом разделе</p>
-            </div>
-          </section>
-          <section class="chat">
-            <div class="chat__text-wrapper">
-              <h2>Личный помощник</h2>
-              <div class="chat__contacts"><span class="chat__contacts-name">Jim Davidson</span><span class="chat__contacts-email">Jim Davidson@adaurum.ru</span></div>
-              <button class="chat__submenu">
-                <svg width="5" height="21">
-                  <use href="img/sprite.svg#icon-submenu"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="chat__content">
-              <div class="chat__window">
-                <svg width="180" height="183">
-                  <use href="img/sprite.svg#img-chat"></use>
-                </svg>
-                <p>Это чат с администратором. Ты можешь с ним пообщаться по любому вопросу о нашем сервисе и узнать о ходе работы</p>
+            </section>
+            <section class="chat">
+              <div class="chat__text-wrapper">
+                <h2>Личный помощник</h2>
+                <div class="chat__contacts"><span class="chat__contacts-name">Jim Davidson</span><span class="chat__contacts-email">Jim Davidson@adaurum.ru</span></div>
+                <button class="chat__submenu" type="button">
+                  <svg width="5" height="21">
+                    <use href="img/sprite.svg#icon-submenu"></use>
+                  </svg>
+                </button>
               </div>
-              <div class="chat__interaction">
-                <button class="chat__btn chat__btn--mediaplan" id="btn-mediaplan">Заказать медиаплан.</button>
-                <button class="chat__btn chat__btn--report" id="btn-report">Заказать отчет.</button>
-                <form class="chat__form" action="#" method="post">
-                  <input class="chat__form-input" type="text" placeholder="Введите сообщение для администратора" required>
-                  <div class="chat__form-additional-btns">
-                    <label class="chat__file-input">
-                      <input type="file" name="file" ariaLabel="null"/><span class="chat__file-btn">
-                        <svg width="24" height="24">
-                          <use href="img/sprite.svg#icon-load-file"></use>
-                        </svg></span>
-                    </label>
-                    <label class="chat__file-input">
-                      <input type="file" name="file" ariaLabel="null"/><span class="chat__file-btn">
-                        <svg width="24" height="24">
-                          <use href="img/sprite.svg#icon-load-img"></use>
-                        </svg></span>
-                    </label>
+              <div class="chat__content">
+                <div class="chat__window">
+                  <div class="chat__img-wrapper">
+                    <svg width="190" height="193">
+                      <use href="img/sprite.svg#img-chat"></use>
+                    </svg>
                   </div>
-                  <div class="chat__form-btn-wrapper">
-                    <button class="chat__form-btn" type="submit" aria-label="Отправить сообщение.">
-                      <svg width="24" height="24">
-                        <use href="img/sprite.svg#icon-send"></use>
-                      </svg>
-                    </button><span>Enter</span>
+                  <p>Это чат с администратором. Ты можешь с ним пообщаться по любому вопросу о нашем сервисе и узнать о ходе работы</p>
+                </div>
+                <div class="chat__interaction">
+                  <div class="chat__btn-wrapper">
+                    <button class="chat__btn chat__btn--mediaplan" id="btn-mediaplan">Заказать медиаплан</button>
+                    <button class="chat__btn chat__btn--report" id="btn-report">Заказать отчет</button>
                   </div>
-                </form>
+                  <form class="chat__form" action="#" method="post">
+                    <textarea class="chat__form-input" name="message" placeholder="Введите сообщение для администратора" required></textarea>
+                    <div class="chat__form-additional-btns">
+                      <label class="chat__file-input">
+                        <input type="file" name="file" ariaLabel="null"/><span class="chat__file-btn">
+                          <svg width="24" height="24">
+                            <use href="img/sprite.svg#icon-load-file"></use>
+                          </svg></span>
+                      </label>
+                      <label class="chat__file-input">
+                        <input type="file" name="file" ariaLabel="null" accept="image/*"/><span class="chat__file-btn">
+                          <svg width="24" height="24">
+                            <use href="img/sprite.svg#icon-load-img"></use>
+                          </svg></span>
+                      </label>
+                    </div>
+                    <div class="chat__form-btn-wrapper">
+                      <button class="chat__form-btn" type="submit" aria-label="Отправить сообщение.">
+                        <svg width="24" height="24">
+                          <use href="img/sprite.svg#icon-send"></use>
+                        </svg>
+                      </button><span>Enter</span>
+                    </div>
+                  </form>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </main>
       <footer class="main-footer">
@@ -128,9 +134,9 @@
                 <use href="img/sprite.svg#icon-language"></use>
               </svg>
               <ul class="main-footer__languages-list">
-                <li>RU</li>
-                <li>EN</li>
-                <li>TUR</li>
+                <li class="main-footer__languages-item is-active">RU</li>
+                <li class="main-footer__languages-item">EN</li>
+                <li class="main-footer__languages-item">TUR</li>
               </ul>
             </div>
             <ul class="main-footer__social">

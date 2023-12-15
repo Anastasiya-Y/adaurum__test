@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "extends";
 
 // Global
 
@@ -7,3 +8,12 @@
 @import "./global/utils";
 @import "./global/container";
 @import "./global/reboot";
+@import "./global/fonts";
+
+// Modules
+
+@import "./modules/main-header";
+@import "./modules/main";
+@import "./modules/files";
+@import "./modules/chat";
+@import "./modules/main-footer";

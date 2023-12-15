@@ -12,8 +12,9 @@ footer.main-footer
       .main-footer__languages
         +sprite(24, 24, "icon-language")
         ul.main-footer__languages-list
-          each item in languages
-            li= item
+          li.main-footer__languages-item.is-active= "RU"
+          li.main-footer__languages-item= "EN"
+          li.main-footer__languages-item= "TUR"
       ul.main-footer__social
         li.social__item
           a.social__link.social__link--whatsapp(href="#" aria-label=`Страница компании ${title} в Telegram.` target="_blank")
