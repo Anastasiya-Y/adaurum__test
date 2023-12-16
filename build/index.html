@@ -77,7 +77,7 @@
                 </button>
               </div>
               <div class="chat__content">
-                <div class="chat__window">
+                <div class="chat__window" id="chat-window">
                   <div class="chat__img-wrapper">
                     <svg width="190" height="193">
                       <use href="img/sprite.svg#img-chat"></use>
@@ -90,8 +90,8 @@
                     <button class="chat__btn chat__btn--mediaplan" id="btn-mediaplan">Заказать медиаплан</button>
                     <button class="chat__btn chat__btn--report" id="btn-report">Заказать отчет</button>
                   </div>
-                  <form class="chat__form" action="#" method="post">
-                    <textarea class="chat__form-input" name="message" placeholder="Введите сообщение для администратора" required></textarea>
+                  <form class="chat__form" id="form">
+                    <textarea class="chat__form-input" name="message" id="message-input" placeholder="Введите сообщение для администратора" required></textarea>
                     <div class="chat__form-additional-btns">
                       <label class="chat__file-input">
                         <input type="file" name="file" ariaLabel="null"/><span class="chat__file-btn">
@@ -107,7 +107,7 @@
                       </label>
                     </div>
                     <div class="chat__form-btn-wrapper">
-                      <button class="chat__form-btn" type="submit" aria-label="Отправить сообщение.">
+                      <button class="chat__form-btn" type="submit" id="form-btn" aria-label="Отправить сообщение.">
                         <svg width="24" height="24">
                           <use href="img/sprite.svg#icon-send"></use>
                         </svg>

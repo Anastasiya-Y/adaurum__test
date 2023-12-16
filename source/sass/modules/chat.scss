@@ -41,6 +41,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 
   svg {
     flex-shrink: 0;
@@ -105,6 +106,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
+  cursor: pointer;
 }
 
 .chat__btn--mediaplan {
@@ -184,4 +186,37 @@
   border: none;
   height: 50px;
   width: 50px;
+}
+
+// Chat interaction
+.message {
+  max-width: 69.99%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message--my-message {
+  align-self: end;
+  align-items: end;
+}
+
+.message--response-message {
+  align-self: start;
+  align-items: start;
+}
+
+.message__text {
+  display: flex;
+  padding: 16px 22px;
+  border-radius: 12px;
+  background-color: $color-default-white;
+  font-weight: 500;
+  line-height: 145%;
+}
+
+.message__time {
+  font-size: 15px;
+  color: $color-very-light-grey;
+  line-height: 135%;
 }

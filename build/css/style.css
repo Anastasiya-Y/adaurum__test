@@ -554,6 +554,7 @@ img {
   height: 40px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 .chat__submenu svg {
   flex-shrink: 0;
@@ -615,6 +616,7 @@ img {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
+  cursor: pointer;
 }
 
 .chat__btn--mediaplan {
@@ -694,9 +696,42 @@ img {
   width: 50px;
 }
 
+.message {
+  max-width: 69.99%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message--my-message {
+  align-self: end;
+  align-items: end;
+}
+
+.message--response-message {
+  align-self: start;
+  align-items: start;
+}
+
+.message__text {
+  display: flex;
+  padding: 16px 22px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  font-weight: 500;
+  line-height: 145%;
+}
+
+.message__time {
+  font-size: 15px;
+  color: #525252;
+  line-height: 135%;
+}
+
 .main-footer {
   padding: 28px 0;
   color: #525252;
+  background-color: #ebebeb;
 }
 
 .main-footer__wrapper {
