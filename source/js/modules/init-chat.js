@@ -3,9 +3,6 @@ const chatWindow = document.querySelector('#chat-window');
 const textArea = document.querySelector('#message-input');
 
 
-
-
-
 function onFormSubmit(evt) {
   if (chatWindow.querySelectorAll('.message').length === 0) {
     chatWindow.innerHTML = '';
@@ -58,11 +55,26 @@ const createResponseMessage = () => {
   const messageContainer = document.createElement('div');
   messageContainer.classList.add('message', 'message--response-message');
 
+  const messageAgentPhotoPicture = document.createElement('picture');
+
+  const messageAgentPhotoWebp = document.createElement('source');
+  messageAgentPhotoWebp.setAttribute('type', 'image/webp');
+  messageAgentPhotoWebp.setAttribute('src', 'img/content/photo-jim.webp');
+
+  const messageAgentPhotoPng = document.createElement('img');
+  messageAgentPhotoPng.setAttribute('src', 'img/content/photo-jim.png');
+  messageAgentPhotoPng.setAttribute('width', '49');
+  messageAgentPhotoPng.setAttribute('height', '49');
+  messageAgentPhotoPng.setAttribute('alt', 'Photo of Jim.');
+
+  messageAgentPhotoPicture.append(messageAgentPhotoWebp, messageAgentPhotoPng);
+
   const messageText = document.createElement('div');
   messageText.classList.add('message__text');
   messageText.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
   const messageInfo = document.createElement('div');
+  messageInfo.classList.add('message__info');
 
   const messageAgent = document.createElement('span');
   messageAgent.classList.add('message__agent');
@@ -74,6 +86,7 @@ const createResponseMessage = () => {
 
   messageInfo.append(messageAgent, messageTime);
 
+  messageContainer.append(messageAgentPhotoPicture);
   messageContainer.append(messageText);
   messageContainer.append(messageInfo);
   // textArea.value = '';

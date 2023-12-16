@@ -123,6 +123,12 @@
 .chat__form {
   position: relative;
   padding: 25px 80px 54px 20px;
+  border: 2px solid $color-default-white;
+
+  &:focus-within {
+    border-color: $color-razzle-dazzle-rose;
+    border-radius: 20px;
+  }
 }
 
 .chat__form-input {
@@ -133,6 +139,10 @@
   flex-shrink: 0;
   resize: none;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .chat__form-additional-btns {
@@ -207,6 +217,18 @@
 .message--response-message {
   align-self: start;
   align-items: start;
+  display: grid;
+  gap: 8px 13px;
+  grid-template-columns: 49px auto;
+
+  .message__text {
+    grid-column: 2 / -1;
+  }
+
+  .message__info {
+    grid-column: 2 / -1;
+    grid-template-columns: repeat(2, min-content);
+  }
 }
 
 .message__text {
@@ -223,4 +245,16 @@
   font-size: 15px;
   color: $color-very-light-grey;
   line-height: 135%;
+}
+
+.message__info {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px;
+  align-items: end;
+}
+
+.message__agent {
+  font-size: 18px;
+  font-weight: 600;
 }
