@@ -77,13 +77,15 @@
                 </button>
               </div>
               <div class="chat__content">
-                <div class="chat__window" id="chat-window">
-                  <div class="chat__img-wrapper">
-                    <svg width="190" height="193">
-                      <use href="img/sprite.svg#img-chat"></use>
-                    </svg>
+                <div class="chat__window-wrapper">
+                  <div class="chat__window" id="chat-window">
+                    <div class="chat__img-wrapper">
+                      <svg width="190" height="193">
+                        <use href="img/sprite.svg#img-chat"></use>
+                      </svg>
+                    </div>
+                    <p>Это чат с администратором. Ты можешь с ним пообщаться по любому вопросу о нашем сервисе и узнать о ходе работы</p>
                   </div>
-                  <p>Это чат с администратором. Ты можешь с ним пообщаться по любому вопросу о нашем сервисе и узнать о ходе работы</p>
                 </div>
                 <div class="chat__interaction">
                   <div class="chat__btn-wrapper">
@@ -91,7 +93,7 @@
                     <button class="chat__btn chat__btn--report" id="btn-report">Заказать отчет</button>
                   </div>
                   <form class="chat__form" id="form">
-                    <textarea class="chat__form-input" name="message" id="message-input" placeholder="Введите сообщение для администратора" required></textarea>
+                    <textarea class="chat__form-input" name="message" id="message-input" type="text" placeholder="Введите сообщение для администратора" required></textarea>
                     <div class="chat__form-additional-btns">
                       <label class="chat__file-input">
                         <input type="file" name="file" ariaLabel="null"/><span class="chat__file-btn">

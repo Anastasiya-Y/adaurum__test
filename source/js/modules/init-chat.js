@@ -2,7 +2,9 @@ const form = document.querySelector('#form');
 const chatWindow = document.querySelector('#chat-window');
 const textArea = document.querySelector('#message-input');
 
-form.addEventListener('submit', onFormSubmit);
+
+
+
 
 function onFormSubmit(evt) {
   if (chatWindow.querySelectorAll('.message').length === 0) {
@@ -78,3 +80,15 @@ const createResponseMessage = () => {
 
   return messageContainer;
 }
+
+const onTextAreaEnterPress = (evt) => {
+  if (evt.ctrlKey && evt.keyCode === 13) {
+    const newEvent = new Event('submit', {cancelable: true});
+    evt.target.form.dispatchEvent(newEvent);
+  }
+};
+
+form.addEventListener('submit', onFormSubmit);
+
+
+textArea.addEventListener('keydown', onTextAreaEnterPress);

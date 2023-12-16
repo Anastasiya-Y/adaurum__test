@@ -56,14 +56,17 @@
 
 }
 
-.chat__window {
+.chat__window-wrapper {
   height: 452px;
   overflow-y: auto;
+  padding: 50px 20px 115px 20px;
+}
+
+.chat__window {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px 115px 20px;
 
   p {
     max-width: 470px;
@@ -213,6 +216,7 @@
   background-color: $color-default-white;
   font-weight: 500;
   line-height: 145%;
+  white-space: pre-wrap;
 }
 
 .message__time {

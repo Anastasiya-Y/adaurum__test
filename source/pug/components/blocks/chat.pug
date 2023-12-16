@@ -7,16 +7,17 @@ section.chat
     button.chat__submenu(type="button")
       +sprite(5, 21, "icon-submenu")
   .chat__content
-    .chat__window(id="chat-window")
-      .chat__img-wrapper
-        +sprite(190, 193, "img-chat")
-      p Это чат с администратором. Ты можешь с ним пообщаться по любому вопросу о нашем сервисе и узнать о ходе работы
+    .chat__window-wrapper
+      .chat__window(id="chat-window")
+        .chat__img-wrapper
+          +sprite(190, 193, "img-chat")
+        p Это чат с администратором. Ты можешь с ним пообщаться по любому вопросу о нашем сервисе и узнать о ходе работы
     .chat__interaction
       .chat__btn-wrapper
         +chat-btn("chat__btn chat__btn--mediaplan", "btn-mediaplan", "Заказать медиаплан")
         +chat-btn("chat__btn chat__btn--report", "btn-report", "Заказать отчет")
       form.chat__form(id="form")
-        textarea.chat__form-input(name="message" id="message-input" placeholder="Введите сообщение для администратора" required)
+        textarea.chat__form-input(name="message" id="message-input" type="text" placeholder="Введите сообщение для администратора" required)
         .chat__form-additional-btns
           +chat-load-btn(24, 24, "icon-load-file", "Загрузить файл.")
           +chat-load-btn(24, 24, "icon-load-img", "Загрузить изображение.", "image/*")
