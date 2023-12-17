@@ -33,6 +33,10 @@ main {
 body {
   margin: 0;
   background-color: $color-white-smoke;
+
+  @include vp-767 {
+    background-color: $color-default-white;
+  }
 }
 
 a {

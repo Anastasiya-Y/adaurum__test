@@ -1,21 +1,71 @@
 .main-footer {
-  padding: 28px 0;
+  padding: 26px 0 28px 0;
   color: $color-very-light-grey;
   background-color: $color-whisper;
+
+  @include vp-1439 {
+    padding: 33px 0 28px 0;
+  }
+
+  @include vp-1439 {
+    background-color: $color-transparent;
+  }
 }
 
 .main-footer__wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
+  display: flex;
+  justify-content: space-between;
   gap: 65px;
   align-items: center;
   font-weight: 500;
   font-size: 15px;
   line-height: 145%;
+
+  @include vp-1439 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.main-footer__info-wrapper {
+  display: flex;
+  gap: 106px;
+  align-items: center;
+
+  @include vp-1439 {
+    width: 100%;
+    gap: 41px;
+    align-items: end;
+  }
+
+  @include vp-1439 {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .main-footer__logo {
-  margin-right: 41px;
+  @include vp-1439 {
+    width: 209px;
+  }
+}
+
+.main-footer__contacts {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+
+  @include vp-1439 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .main-footer__email {
@@ -29,6 +79,10 @@
   display: grid;
   grid-template-columns: 24px auto;
   gap: 12px;
+
+  @include vp-767 {
+    order: -1;
+  }
 }
 
 .main-footer__languages-list {

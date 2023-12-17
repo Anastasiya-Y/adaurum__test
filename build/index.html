@@ -35,12 +35,12 @@
                   </div>
                 </li>
                 <li class="main-header__nav-func">
-                  <button class="img-btn main-header__nav-btn" id="settings">
+                  <button class="main-header__nav-btn" id="settings">
                     <svg width="24" height="24">
                       <use href="img/sprite.svg#icon-settings"></use>
                     </svg>
                   </button>
-                  <button class="img-btn main-header__nav-btn" id="settings">
+                  <button class="main-header__nav-btn" id="settings">
                     <svg width="24" height="24">
                       <use href="img/sprite.svg#icon-login"></use>
                     </svg>
@@ -58,7 +58,7 @@
             <section class="files">
               <h2>Файлы</h2>
               <div class="files__content">
-                <div class="files__template" id="files__template">
+                <div class="files__template" id="files-template">
                   <div class="files__img-wrapper">
                     <svg width="255.84" height="314">
                       <use href="img/sprite.svg#img-files"></use>
@@ -66,9 +66,10 @@
                   </div>
                   <p>Закажи у личного помощника медиаплан. Он появится в этом разделе</p>
                 </div>
-                <div class="files__mediaplan" id="files__mediaplan">
+                <div class="files__mediaplan" id="files-mediaplan">
                   <h3>Медиапланы</h3>
-                  <ul class="files__mediaplan-list" id="files__mediaplan-list"></ul>
+                  <ul class="files__mediaplan-list" id="files-mediaplan-list"></ul>
+                  <button class="files__show-more hidden" id="files-show-more">Показать еще</button>
                 </div>
               </div>
             </section>
@@ -130,33 +131,33 @@
       </main>
       <footer class="main-footer">
         <div class="container">
-          <div class="main-footer__wrapper"><a class="main-footer__logo" href="index.html" aria-label="Переход на главную страницу сайта PinkChicken">
-              <svg width="219" height="29.41">
-                <use href="img/sprite.svg#logo"></use>
-              </svg></a><span class="main-footer__copyright">Политика конфиденциальности</span><a class="main-footer__email" href="mailto:pinkchicken@adaurum.ru" aria-label="Написать email на электронную почту компании PinkChicken">
-              <svg width="24" height="24">
-                <use href="img/sprite.svg#icon-email"></use>
-              </svg><span>pinkchicken@adaurum.ru</span></a>
-            <div class="main-footer__languages">
-              <svg width="24" height="24">
-                <use href="img/sprite.svg#icon-language"></use>
-              </svg>
-              <ul class="main-footer__languages-list">
-                <li class="main-footer__languages-item is-active">RU</li>
-                <li class="main-footer__languages-item">EN</li>
-                <li class="main-footer__languages-item">TUR</li>
+          <div class="main-footer__wrapper">
+            <div class="main-footer__info-wrapper"><a class="main-footer__logo" href="index.html" aria-label="Переход на главную страницу сайта PinkChicken">
+                <svg width="219" height="32">
+                  <use href="img/sprite.svg#logo-grey"></use>
+                </svg></a><span class="main-footer__copyright">Политика конфиденциальности</span></div>
+            <div class="main-footer__contacts"><a class="main-footer__email" href="mailto:pinkchicken@adaurum.ru" aria-label="Написать email на электронную почту компании PinkChicken">
+                <svg width="24" height="24">
+                  <use href="img/sprite.svg#icon-email"></use>
+                </svg><span>pinkchicken@adaurum.ru</span></a>
+              <div class="main-footer__languages">
+                <svg width="24" height="24">
+                  <use href="img/sprite.svg#icon-language"></use>
+                </svg>
+                <ul class="main-footer__languages-list">
+                  <li class="main-footer__languages-item is-active">RU</li>
+                  <li class="main-footer__languages-item">EN</li>
+                  <li class="main-footer__languages-item">TUR</li>
+                </ul>
+              </div>
+              <ul class="main-footer__social">
+                <li class="social__item"><a class="social__link social__link--whatsapp" href="#" aria-label="Страница компании PinkChicken в Telegram." target="_blank"><img src="img/svg/icon-telegram.svg" width="40" height="40"></a></li>
+                <li class="social__item"><a class="social__link social__link--whatsapp" href="#" aria-label="Страница компании PinkChicken в WhatsApp." target="_blank">
+                    <svg width="40" height="40">
+                      <use href="img/sprite.svg#icon-whatsapp"></use>
+                    </svg></a></li>
               </ul>
             </div>
-            <ul class="main-footer__social">
-              <li class="social__item"><a class="social__link social__link--whatsapp" href="#" aria-label="Страница компании PinkChicken в Telegram." target="_blank">
-                  <svg width="26" height="25">
-                    <use href="img/sprite.svg#icon-telegram"></use>
-                  </svg></a></li>
-              <li class="social__item"><a class="social__link social__link--whatsapp" href="#" aria-label="Страница компании PinkChicken в WhatsApp." target="_blank">
-                  <svg width="26" height="26">
-                    <use href="img/sprite.svg#icon-whatsapp"></use>
-                  </svg></a></li>
-            </ul>
           </div>
         </div>
       </footer>
