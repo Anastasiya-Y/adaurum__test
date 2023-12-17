@@ -3,6 +3,8 @@
   background-color: $color-default-white;
   box-shadow: 0px 0px 30px 0px $color-shadow;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 
   h2 {
     @extend %title;
@@ -12,9 +14,71 @@
 }
 
 .files__content {
+  display: flex;
+  flex-direction: column;
   @extend %p;
 }
 
 .files__img-wrapper {
   margin-bottom: 30px;
+}
+
+.files__mediaplan {
+  display: none;
+  flex-direction: column;
+}
+
+.files__mediaplan-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.files__mediaplan-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.files__mediaplan-item-container {
+  background-color: $color-white-smoke;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 42px auto 42px;
+}
+
+.files__mediaplan-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+}
+
+.files__mediaplan-icon-container--refresh {
+  background-color: $color-nobel;
+  cursor: pointer;
+}
+
+.files__mediaplan-text {
+  margin-top: 10px;
+}
+
+.files__mediaplan-status-container {
+  display: grid;
+  grid-template-columns: 16px auto;
+  gap: 5px;
+  text-align: left;
+  color: $color-very-light-grey;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 135%;
+
+  span {
+    margin-top: 2px;
+  }
 }

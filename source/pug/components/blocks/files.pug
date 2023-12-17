@@ -1,6 +1,10 @@
 section.files
   h2 Файлы
   .files__content
-    .files__img-wrapper
-      +sprite(255.84, 314, 'img-files')
-    p Закажи у личного помощника медиаплан. Он появится в этом разделе
+    .files__template(id="files__template")
+      .files__img-wrapper
+        +sprite(255.84, 314, 'img-files')
+      p Закажи у личного помощника медиаплан. Он появится в этом разделе
+    .files__mediaplan(id="files__mediaplan")
+      h3 Медиапланы
+      ul.files__mediaplan-list(id="files__mediaplan-list")
