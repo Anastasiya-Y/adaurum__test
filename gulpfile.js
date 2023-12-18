@@ -3,7 +3,6 @@ import {deleteAsync as del} from 'del';
 import browserSync from 'browser-sync';
 
 import {copy} from './gulp/copyFiles.js';
-// import {html} from './gulp/compileHtml.js';
 import {pug} from './gulp/compilePug.js'
 import {styles} from './gulp/compileStyles.js';
 import {scripts} from './gulp/compileScripts.js';
@@ -43,7 +42,6 @@ export const build = gulp.series(
     sprite,
     gulp.parallel(
         pug,
-        // html,
         styles,
         scripts,
         adaptImages,

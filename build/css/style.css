@@ -624,7 +624,7 @@ img {
 .files {
   padding: 28px 23px 28px 6px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -827,7 +827,7 @@ img {
 .chat {
   padding: 28px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
   border-radius: 20px;
 }
 @media (max-width: 1439px) {
@@ -947,6 +947,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 11px;
 }
 .chat__window p {
   max-width: 470px;
@@ -1390,23 +1391,12 @@ img {
 .options {
   position: absolute;
   top: 46px;
-  right: 0px;
+  right: 0;
   display: inline-flex;
   padding: 16px 30px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
-}
-
-.options__list {
-  display: inline-flex;
-  align-items: end;
-  gap: 10px;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-weight: 500;
 }
 
 .options__list {

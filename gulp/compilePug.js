@@ -22,12 +22,11 @@ const pug = () => {
             },
           })
       )
-      // неминифицированный html
       .pipe(gulpPug({
         pretty: true,
         verbose: true,
       }))
-      // минифицированный html
+      // Minify html
       // .pipe(gulpPug())
       //   .pipe(rename({
       //     extname: '.min.html'

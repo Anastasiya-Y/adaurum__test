@@ -17,17 +17,17 @@ const iconStatusReady = '<svg width="16" height="16" viewBox="0 0 16 16" fill="n
 const textLoading = 'Медиаплан в процессе составления';
 const textReady = 'Медиаплан от 1.06.22 готов';
 const onMediaplanBtnClick = (evt) => {
-  // Подготовка чата
+  // Prepare chat
   if (chatWindow.querySelectorAll('.message').length === 0) {
     chatWindow.innerHTML = '';
     chatWindow.style.justifyContent = 'end';
   }
 
-  // Создание запроса
+  // Сreate message
   evt.preventDefault();
   chatWindow.append(createMyMessage(arrAsk));
 
-  // Создание ответа от агента
+  // Create response from agent
   setTimeout(() => {
     mediaplanContainer.classList.add('is-active');
     initMediaplanContainer();
@@ -119,7 +119,7 @@ const setMediaplanLoadingStatus = (container, svg, statusText) => {
 
   container.append(mediaplanStatusText);
 
- return container;
+  return container;
 };
 
 

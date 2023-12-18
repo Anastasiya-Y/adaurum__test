@@ -36,7 +36,6 @@ const onShowMoreButtonClick = () => {
     showMoreButton.classList.add('hidden');
     return;
   }
-  //showMoreButton.classList.add('hidden');
 };
 
 const initShowMoreButton = () => {

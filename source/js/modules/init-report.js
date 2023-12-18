@@ -7,17 +7,17 @@ const chatWindow = document.querySelector('#chat-window');
 const arrAsk = ['Я хочу заказать отчет.'];
 const addResponse = ['Отчет за текущий год может быть сформирован аналогично медиапланам за текущий год. Для тестирования шаблона запустите формирование медиапланов.'];
 const onReportBtnClick = (evt) => {
-  // Подготовка чата
+  // Prepare chat
   if (chatWindow.querySelectorAll('.message').length === 0) {
     chatWindow.innerHTML = '';
     chatWindow.style.justifyContent = 'end';
   }
 
-  // Создание запроса
+  // Сreate message
   evt.preventDefault();
   chatWindow.append(createMyMessage(arrAsk));
 
-  // Создание ответа от агента
+  // Create response from agent
   setTimeout(() => {
     chatWindow.append(createResponseMessage(addResponse));
   }, 3000);
