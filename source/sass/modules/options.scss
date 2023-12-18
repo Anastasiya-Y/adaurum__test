@@ -1,0 +1,50 @@
+.options {
+  position: absolute;
+  top: 46px;
+  right: 0px;
+  display: inline-flex;
+  padding: 16px 30px;
+  background-color: $color-default-white;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 0 $color-shadow;
+}
+
+.options__list {
+  display: inline-flex;
+  align-items: end;
+  gap: 10px;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+.options__list {
+  display: inline-flex;
+  align-items: end;
+  gap: 10px;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+.options__btn {
+  display: inline-flex;
+  border: none;
+  background-color: $color-transparent;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+  padding: 0;
+
+  @media (hover:hover) and (pointer:fine) {
+    &:hover {
+      color: $color-razzle-dazzle-rose;
+    }
+  }
+}

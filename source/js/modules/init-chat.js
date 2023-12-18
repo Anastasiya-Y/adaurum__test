@@ -66,19 +66,11 @@ const createResponseMessage = (...args) => {
   messageContainer.classList.add('message', 'message--response-message');
 
   // Photo of agent
-  const messageAgentPhotoPicture = document.createElement('picture');
-
-  const messageAgentPhotoWebp = document.createElement('source');
-  messageAgentPhotoWebp.setAttribute('type', 'image/webp');
-  messageAgentPhotoWebp.setAttribute('src', 'img/content/photo-jim.webp');
-
-  const messageAgentPhotoPng = document.createElement('img');
-  messageAgentPhotoPng.setAttribute('src', 'img/content/photo-jim.png');
-  messageAgentPhotoPng.setAttribute('width', '49');
-  messageAgentPhotoPng.setAttribute('height', '49');
-  messageAgentPhotoPng.setAttribute('alt', 'Photo of Jim.');
-
-  messageAgentPhotoPicture.append(messageAgentPhotoWebp, messageAgentPhotoPng);
+  const messageAgentPhoto = document.createElement('img');
+  messageAgentPhoto.setAttribute('src', 'img/content/photo-jim.png');
+  messageAgentPhoto.setAttribute('width', '49');
+  messageAgentPhoto.setAttribute('height', '49');
+  messageAgentPhoto.setAttribute('alt', 'Photo of Jim.');
 
   // Response text
   const messageText = document.createElement('div');
@@ -88,7 +80,6 @@ const createResponseMessage = (...args) => {
   } else {
     messageText.innerHTML = args[0];
   }
-
 
   // Agent info
   const messageInfo = document.createElement('div');
@@ -106,11 +97,10 @@ const createResponseMessage = (...args) => {
   // Put agent info
   messageInfo.append(messageAgent, messageTime);
 
-  // put in the container
-  messageContainer.append(messageAgentPhotoPicture);
+  // Put in the container
+  messageContainer.append(messageAgentPhoto);
   messageContainer.append(messageText);
   messageContainer.append(messageInfo);
-  // textArea.value = '';
 
   return messageContainer;
 };

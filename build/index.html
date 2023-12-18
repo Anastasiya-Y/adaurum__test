@@ -74,14 +74,24 @@
               </div>
             </section>
             <section class="chat">
-              <div class="chat__text-wrapper">
+              <div class="chat__text-wrapper" id="chat-text-wrapper">
                 <h2>Личный помощник</h2>
                 <div class="chat__contacts"><span class="chat__contacts-name">Jim Davidson</span><span class="chat__contacts-email">Jim Davidson@adaurum.ru</span></div>
-                <button class="chat__submenu" type="button">
+                <button class="chat__submenu" type="button" id="chat-submenu">
                   <svg width="5" height="21">
                     <use href="img/sprite.svg#icon-submenu"></use>
                   </svg>
                 </button>
+                <div class="options hidden" id="options">
+                  <ul class="options__list">
+                    <li class="options__item">
+                      <button class="options__btn" type="button">Обратная связь о работе сервиса</button>
+                    </li>
+                    <li class="options__item">
+                      <button class="options__btn" type="button">Сменить помощника</button>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="chat__content">
                 <div class="chat__window-wrapper">

@@ -7,6 +7,10 @@
   @include vp-1439 {
     max-width: 86%;
   }
+
+  @include vp-767 {
+    max-width: 90%;
+  }
 }
 
 .message--my-message {
@@ -15,6 +19,10 @@
 
   @include vp-1439 {
     padding-right: 7px;
+  }
+
+  @include vp-767 {
+    padding-right: 16px;
   }
 }
 
@@ -37,6 +45,17 @@
   @include vp-1439 {
     padding-left: 8px;
   }
+
+  @include vp-767 {
+    padding: 0;
+    grid-template-columns: 36px auto;
+    gap: 8px 10px;
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
 }
 
 .message__text {
@@ -47,6 +66,10 @@
   font-weight: 500;
   line-height: 145%;
   white-space: pre-wrap;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
 }
 
 .message__time {

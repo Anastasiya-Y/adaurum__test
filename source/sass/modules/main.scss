@@ -8,4 +8,9 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  @include vp-767 {
+    gap: 0;
+    padding: 0;
+  }
 }

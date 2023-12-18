@@ -1,5 +1,5 @@
 import {createMyMessage, createResponseMessage} from './init-chat.js';
-import { updateLoadButton } from './init-show-more-button.js';
+import { updateShowMoreButton } from './init-show-more-button.js';
 
 const mediaplanBtn = document.querySelector('#btn-mediaplan');
 const chatWindow = document.querySelector('#chat-window');
@@ -29,6 +29,7 @@ const onMediaplanBtnClick = (evt) => {
 
   // Создание ответа от агента
   setTimeout(() => {
+    mediaplanContainer.classList.add('is-active');
     initMediaplanContainer();
   }, 3000);
 };
@@ -55,7 +56,7 @@ const createMediaplanItems = async () => {
     const mediaplanItem = createMediaplanItem();
     mediaplanList.prepend(mediaplanItem);
     await setPause(4050);
-    updateLoadButton();
+    updateShowMoreButton();
   }
 };
 

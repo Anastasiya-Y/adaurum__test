@@ -1,11 +1,17 @@
 section.chat
-  .chat__text-wrapper
+  .chat__text-wrapper(id="chat-text-wrapper")
     h2 Личный помощник
     .chat__contacts
       span.chat__contacts-name Jim Davidson
       span.chat__contacts-email Jim Davidson@adaurum.ru
-    button.chat__submenu(type="button")
+    button.chat__submenu(type="button" id="chat-submenu")
       +sprite(5, 21, "icon-submenu")
+    .options.hidden(id="options")
+      ul.options__list
+        li.options__item
+          button.options__btn(type="button") Обратная связь о работе сервиса
+        li.options__item
+          button.options__btn(type="button") Сменить помощника
   .chat__content
     .chat__window-wrapper
       .chat__window(id="chat-window")
